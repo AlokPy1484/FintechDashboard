@@ -9,6 +9,7 @@ class User(AbstractUser):
 
     email = models.EmailField(unique=True)
     role = models.CharField(max_length=10, choices=Role.choices, default=Role.VIEWER)
+    date_joined = models.DateTimeField(auto_now_add=True)
 
     
     def __str__(self):

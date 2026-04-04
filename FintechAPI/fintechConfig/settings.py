@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'rest_framework', #rest_api
     'rest_framework_simplejwt', #jwt_auth
+    'rest_framework_simplejwt.token_blacklist', #jwt_logout
     'django_filters', #database_filter
     'drf_spectacular', #OpenAPI 
     'corsheaders', #Handles CORS
