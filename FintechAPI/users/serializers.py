@@ -35,7 +35,7 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 
-class UserUpdateSerializer(serializers.Serializer):
+class UserUpdateSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User

@@ -18,3 +18,23 @@ urlpatterns = [
     path('<int:pk>/', views.UserDetailView.as_view(), name='user_details'),
     path('<int:pk>/status/', views.UserSatusView.as_view(), name='user_status'),
 ]
+
+
+
+
+#User Model Endpoints
+
+# OpenAPI Swagger documentation at GET  /api/docs/
+
+# POST  /api/users/auth/register/         → Create a new user
+# POST  /api/users/auth/login/            → Get access + refresh tokens
+# GET   /api/users/auth/me/               → View profile (send Bearer token)
+# PATCH /api/users/auth/change-password/  → Change password
+# POST  /api/users/auth/logout/           → Blacklist refresh token
+
+# GET   /api/users/                       → List all users (Admin only)
+# POST  /api/users/                       → Create user (Admin only)
+# GET   /api/users/<id>/                  → Get user detail (Admin only)
+# PATCH /api/users/<id>/                  → Update user (Admin only)
+# DELETE /api/users/<id>/                 → Delete user (Admin only)
+# PATCH /api/users/<id>/status/           → Activate/deactivate (Admin only)
