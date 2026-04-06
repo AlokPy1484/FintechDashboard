@@ -171,7 +171,7 @@ SPECTACULAR_SETTINGS = {
 }
 
 
-CORS_ALLOW_ALL_ORIGINS = True
+ALLOWED_HOSTS = ['fintechdashboard-qosn.onrender.com', 'localhost', '127.0.0.1']
 
 
 AUTH_USER_MODEL = 'users.User'
